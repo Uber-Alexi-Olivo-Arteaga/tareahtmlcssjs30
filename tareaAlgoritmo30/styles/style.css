@@ -24,10 +24,15 @@
 
 body{
   background: var(--color-1terciario);
+  background-image: url(../img/imgs/plomotex.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 .header{
   background-color: var(--color-1secundario);
   height: 6rem;

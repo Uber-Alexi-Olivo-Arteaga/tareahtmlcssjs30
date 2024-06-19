@@ -24,6 +24,10 @@
 
 body{
   background: var(--color-1terciario);
+  background-image: url(../img/imgs/plomotex.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -181,12 +185,14 @@ body{
 #formulario{
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   margin: auto;
   margin-top: 3rem;
   width: 50%;
   background-color: var(--color-2terciario);
-  border: 1rem solid var(--color-1secundario);
-  border-radius: 2rem;
+  border: 0.5rem solid var(--color-1secundario);
+  border-radius: 3rem;
+  box-shadow: 0rem 0rem 2rem 0rem var(--color-1principal);
 }
 
 .grupoForm{

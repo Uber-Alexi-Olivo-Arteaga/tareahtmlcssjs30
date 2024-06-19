@@ -12,12 +12,17 @@ class Numeros {
 
   ejer2() {
     // 2. Presentar números múltiplos del 7 de 1 a N
-    let num = parseInt(document.getElementById("num2").value);
+    let num = parseInt(document.getElementById("num").value);
     let resp = document.getElementById("resp");
     resp.innerHTML = "";
-    for (let n = 1; n <= num; n++) {
-      if (n % 7 === 0) {
-        resp.innerHTML += `${n} <br>`;
+
+    if (isNaN(num) || num <= 0) {
+      resp.innerHTML = "Por favor, ingresa un número válido.";
+    } else {
+      for (let n = 1; n <= num; n++) {
+        if (n % 7 === 0) {
+          resp.innerHTML += `${n} <br>`;
+        }
       }
     }
   }
@@ -28,9 +33,14 @@ class Numeros {
     let multiplo = parseInt(document.getElementById("multiplo").value);
     let resp = document.getElementById("resp");
     resp.innerHTML = "";
-    for (let n = 1; n <= num; n++) {
-      if (n % multiplo === 0) {
-        resp.innerHTML += `${n} <br>`;
+
+    if (isNaN(num) || num <= 0 || isNaN(multiplo) || multiplo <= 0) {
+      resp.innerHTML = "Por favor, ingresa un número válido y un múltiplo válido.";
+    } else {
+      for (let n = 1; n <= num; n++) {
+        if (n % multiplo === 0) {
+          resp.innerHTML += `${n} <br>`;
+        }
       }
     }
   }
@@ -68,9 +78,14 @@ class Numeros {
     let num = parseInt(document.getElementById("num6").value);
     let resp = document.getElementById("resp");
     resp.innerHTML = "";
-    for (let i = 1; i <= num; i++) {
-      if (num % i === 0) {
-        resp.innerHTML += `${i} <br>`;
+
+    if (isNaN(num) || num <= 0) {
+      resp.innerHTML = "Por favor, ingresa un número válido.";
+    } else {
+      for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+          resp.innerHTML += `${i} <br>`;
+        }
       }
     }
   }
